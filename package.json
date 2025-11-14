@@ -1,0 +1,21 @@
+{
+  "name": "raft-cache",
+  "version": "0.1.0",
+  "description": "Distributed in-memory cache built on Raft consensus",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "server": "npm run build && node dist/server.js"
+  },
+  "keywords": ["raft", "distributed", "cache", "consensus"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
